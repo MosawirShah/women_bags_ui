@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:women_bags/components/custom_grid_view.dart';
+import 'package:women_bags/components/wallet_grid_view.dart';
 import 'package:women_bags/models/products.dart';
 
 class HomeView extends StatefulWidget {
@@ -107,7 +108,8 @@ class _HomeViewState extends State<HomeView> {
                 }),
           ),
  //GRIDVIEW
-         CustomGridView(),
+          categories[selectedIndex] == "Handbag" ? CustomGridView() : WalletsGridView(),
+
         ],
       ),
 

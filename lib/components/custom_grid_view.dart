@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:women_bags/components/product_list.dart';
+import 'package:women_bags/views/detail_view.dart';
 class CustomGridView extends StatefulWidget {
   const CustomGridView({Key? key}) : super(key: key);
 
@@ -26,22 +27,30 @@ class _CustomGridViewState extends State<CustomGridView> {
                 crossAxisSpacing: 10
 
             ),  itemBuilder: (context, index){
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 210,
-                decoration: BoxDecoration(
-                    color: productList.products[index].color,
-                    borderRadius: BorderRadius.circular(18)
+
+          return GestureDetector(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  height: 210,
+                  decoration: BoxDecoration(
+                      color: productList.products[index].color,
+                      borderRadius: BorderRadius.circular(18)
+                  ),
+                  child: Image.asset(productList.products[index].url.toString()),
                 ),
-                child: Image.asset(productList.products[index].url.toString()),
-              ),
-              const SizedBox(height: 5),
-              Text(productList.products[index].title.toString()),
-              const SizedBox(height: 5,),
-              Text("\$ ${productList.products[index].price}"),
-            ],
+                const SizedBox(height: 5),
+                Text(productList.products[index].title.toString()),
+                const SizedBox(height: 5,),
+                Text("\$ ${productList.products[index].price}"),
+              ],
+            ),
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                return DetailView(prodObj: productList.products[index],);
+              }),);
+            },
           );
         }),
       ),

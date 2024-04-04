@@ -26,13 +26,13 @@ class ProductList{
         id: 4,
         title: "Office Code",
         url: "assets/images/bag_4.png",
-        color: const Color(0xFF989493),
+        color: const Color(0xFFE6B398),
         price: 230
     ),  Product(
         id: 5,
         title: "Office Code",
         url: "assets/images/bag_5.png",
-        color: const Color(0xFFE6B398),
+        color: const Color(0xFFFB7883),
         price: 230
     ),
 
@@ -40,7 +40,7 @@ class ProductList{
         id: 6,
         title: "Office Code",
         url: "assets/images/bag_6.png",
-        color: const Color(0xFFAEAEAE),
+        color: const Color(0xFF989493),
         price: 230
     ),
   ];
