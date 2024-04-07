@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:women_bags/components/wallets_list.dart';
+import 'package:women_bags/components/home_view_components/wallets_list.dart';
 class WalletsGridView extends StatefulWidget {
   const WalletsGridView({Key? key}) : super(key: key);
 

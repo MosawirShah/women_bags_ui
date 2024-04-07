@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:women_bags/components/custom_grid_view.dart';
-import 'package:women_bags/components/wallet_grid_view.dart';
+import 'package:women_bags/components/home_view_components/custom_grid_view.dart';
+import 'package:women_bags/components/home_view_components/wallet_grid_view.dart';
 import 'package:women_bags/models/products.dart';
 
 class HomeView extends StatefulWidget {

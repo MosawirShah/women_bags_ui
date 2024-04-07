@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:women_bags/components/product_list.dart';
+import 'package:women_bags/components/home_view_components/product_list.dart';
 import 'package:women_bags/views/detail_view.dart';
 class CustomGridView extends StatefulWidget {
   const CustomGridView({Key? key}) : super(key: key);
